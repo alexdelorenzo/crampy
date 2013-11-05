@@ -49,7 +49,3 @@ class CramConnection(object):
 
     def get_sets(self, id_list):
         pass
-
-    def cleave_cards(self, cards):
-        lets_keep = [u'front', u'back', u'image_url', u'image_front', u'hint']
-        return [{keep: card[keep] for keep in lets_keep if card[keep]} for card in cards]
